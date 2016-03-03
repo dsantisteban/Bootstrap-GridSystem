@@ -5,9 +5,8 @@
   <title>Bootstrap: Grid System</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/queries.css">
   <link rel="stylesheet" href="css/materialdesignicons.min.css">
-
-
   <!-- HTML5 Shim and Respond.js Agrega soporte para elementos HTML5 y media quieries en IE8 -->
   <!-- ADVERTENCIA: Respond.js no soporta que ejecutes tu código via file:// -->
   <!--[if lt IE 9]>
@@ -19,44 +18,57 @@
    <!-- Inserta tu código aqui -->
    <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-5 col-xs-5">
         <h1>Site Name</h1>
       </div>
-      <div class="col-md-6">
-        <ul class="list-inline">
-          <li><span class="glyphicon glyphicon-home"></span>Noticias </li>
-          <li><span class="glyphicon glyphicon-home"></span>Enlaces RSS</li>
-          <li>|</li>
-          <li><input type="text" placeholder="Buscar"></li>
-          <li><button type="button" class="btn btn-default">Normal</button></li>
+      <div class="col-md-7 col-xs-7">
+        <ul class="noticia list-inline text-right">
+          <li><span class="glyphicon glyphicon-home"></span><a href="#"> Noticias</a> </li>
+          <li><span class="glyphicon glyphicon-home"></span><a href="#"> Enlaces RSS</a></li>
+          <li class="hidden-xs hidden-sm">|</li>
+          <li class="hidden-xs hidden-sm"><input type="text" placeholder="Ingresa tu búsqueda"></li>
+          <li class="hidden-xs hidden-sm"><button type="button" class="btn btn-default">Buscar</button></li>
         </ul>
       </div>
     </div>
     <div class="row">
-      <ul class="nav nav-tabs"> 
-        <li class="active"><a href="#">Bienvenido</a></li>
-        <li><a href="#">Actualidades</a></li>
-        <li><a href="#">En directo</a></li>
-        <li><a href="#">Reporte financiero</a></li>
-        <li><a href="#">Nuestra Oferta</a></li>
-        <li><a href="#">De nosotros a usted</a></li>
-      </ul>
+      <nav id="menu" class="navbar navbar-inverse">
+        <div class="navegador">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="nav-tabs collapse navbar-collapse" id="collapse">
+            <ul class="nav  navbar-nav navbar-left text-center">
+              <li class="active"><a href="#">Bienvenido</a></li>
+              <li><a href="#">Actualidades</a></li>
+              <li><a href="#">En directo</a></li>
+              <li><a href="#">Reporte financiero</a></li>
+              <li><a href="#">Nuestra Oferta</a></li>
+              <li><a href="#">De nosotros a usted</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-5 col-sm-7">
         <div class="article">
-          <a href="">Historia destacada</a>
-          <p>Artículo <span>|</span><span> publicado el 09/10/15</span></p>
+          <div class="box-history" href="">Historia destacada</div>
+          <h6>Artículo | <small>publicado el 09/10/15</small></h6>
           <div class="repeat1">
-            <h4>Lorem ipsum et diligat gentris</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus explicabo, incidunt consectetur id officiis, harum ab quisquam at odio vitae sed dolor necessitatibus perspiciatis ratione vero in voluptates officia modi nesciunt inventore dolorem omnis? Saepe nesciunt ipsum aliquam provident, iure odio quo, laborum illo nam hic, fugit qui distinctio dolor omnis perspiciatis sint! Eum, quaerat?</p>
+            <h5>Lorem ipsum et diligat gentris</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Duis vulputate commodo lectus, ac blandit  elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, totor mauris molestie elit, et lacinia ipsum quam nec dui. Quispe nec mauris sit amet elit iaculis pretium sit amet quis magna.</p>
             <div>
               <ul class="list-unstyled list-inline">
-                <li><span class="mdi mdi-bookmark"></span><a href="">Ver más...</a></li>
-                <li><span class="mdi mdi-label"></span>Etiquetas: 
+                <li><h6><span class="mdi mdi-bookmark"></span><a href="">Ver más...</a></h6></li>
+                <li><h6><span class="mdi mdi-label"></span>Etiquetas: 
                   <a href=""><ins>lorem</ins></a>
                   <a href=""><ins>ipsum</ins> </a>
-                  <a href=""><ins>digilat</ins></a>
+                  <a href=""><ins>digilat</ins></a></h6>
                 </li>
               </ul>
             </div>
@@ -66,40 +78,42 @@
         <div class="article">
           <ul class="list-unstyled list-inline">
             <li><a href="#">Webzone</a></li>
-            <li>Preguntas | publicado el 09/10/15</li>
+            <li><h6><ins>Preguntas</ins> | <small>publicado el 09/10/15</small></h6></li>
           </ul>
           <div class="repeat1">
-            <h4>Lorem ipsum et diligat gentris</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus explicabo, incidunt consectetur id officiis, harum ab quisquam at odio vitae sed dolor necessitatibus perspiciatis ratione vero in voluptates officia modi nesciunt inventore dolorem omnis? Saepe nesciunt ipsum aliquam provident, iure odio quo, laborum illo nam hic, fugit qui distinctio dolor omnis perspiciatis sint! Eum, quaerat?</p>
+            <h5>Lorem ipsum et diligat gentris</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Duis vulputate commodo lectus, ac blandit  elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, totor mauris molestie elit, et lacinia ipsum quam nec dui. Quispe nec mauris sit amet elit iaculis pretium sit amet quis magna.</p>
             <div>
               <ul class="list-unstyled list-inline">
-                <li><span class="mdi mdi-bookmark"></span><a href="">Ver más...</a></li>
-                <li><span class="mdi mdi-label"></span>Etiquetas: 
+                <li><h6><span class="mdi mdi-bookmark"></span><a href="">Ver más...</a></h6></li>
+                <li><h6><span class="mdi mdi-label"></span>Etiquetas: 
                   <a href=""><ins>lorem</ins></a>
-                  <a href=""><ins>ipsum </ins></a>
-                  <a href=""><ins>digilat</ins></a>
+                  <a href=""><ins>ipsum</ins> </a>
+                  <a href=""><ins>digilat</ins></a></h6>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        <hr> 
+
         <div class="article">
-        <hr>  
-          <a href="">Historia destacada</a>
-          <p>Artículo <span>|</span><span> publicado el 09/10/15</span></p>
+
+          <div class="box-history" href="">Historia destacada</div>
+          <h6>Artículo | <small>publicado el 09/10/15</small></h6>
           <div class="repeat1">
-            <h4>Lorem ipsum et diligat gentris</h4>
+            <h5>Etiam lorem et suspira nostres</h5>
             <div class="foto text-center">
               <h4>FOTO</h4>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus explicabo, incidunt consectetur id officiis, harum ab quisquam at odio vitae sed dolor necessitatibus perspiciatis ratione vero in voluptates officia modi nesciunt inventore dolorem omnis? Saepe nesciunt ipsum aliquam provident, iure odio quo, laborum illo nam hic, fugit qui distinctio dolor omnis perspiciatis sint! Eum, quaerat?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Duis vulputate commodo lectus, ac blandit  elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, totor mauris molestie elit, et lacinia ipsum quam nec dui. Quispe nec mauris sit amet elit iaculis pretium sit amet quis magna.</p>
             <div>
               <ul class="list-unstyled list-inline">
-                <li><span class="mdi mdi-bookmark"></span><a href="">Ver más...</a></li>
-                <li><span class="mdi mdi-label"></span>Etiquetas: 
+                <li><h6><span class="mdi mdi-bookmark"></span><a href="">Ver más...</a></h6></li>
+                <li><h6><span class="mdi mdi-label"></span>Etiquetas: 
                   <a href=""><ins>lorem</ins></a>
                   <a href=""><ins>ipsum</ins> </a>
-                  <a href=""><ins>digilat</ins></a>
+                  <a href=""><ins>digilat</ins></a></h6>
                 </li>
               </ul>
             </div>.  
@@ -107,25 +121,25 @@
         </div>
         <hr>  
         <div class="repeat1">
-          <h4>Lorem ipsum et diligat gentris</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus explicabo, incidunt consectetur id officiis, harum ab quisquam at odio vitae sed dolor necessitatibus perspiciatis ratione vero in voluptates officia modi nesciunt inventore dolorem omnis? Saepe nesciunt ipsum aliquam provident, iure odio quo, laborum illo nam hic, fugit qui distinctio dolor omnis perspiciatis sint! Eum, quaerat?</p>
+          <h5>Lorem ipsum et diligat gentris</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Duis vulputate commodo lectus, ac blandit  elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, totor mauris molestie elit, et lacinia ipsum quam nec dui. Quispe nec mauris sit amet elit iaculis pretium sit amet quis magna.</p>
           <div>
-            <ul class="list-unstyled list-inline">
-              <li><span class="mdi mdi-bookmark"></span><a href="">Ver más...</a></li>
-              <li><span class="mdi mdi-label"></span>Etiquetas: 
-                <a href=""><ins>lorem</ins></a>
-                <a href=""><ins>ipsum</ins> </a>
-                <a href=""><ins>digilat</ins></a>
-              </li>
-            </ul>
+              <ul class="list-unstyled list-inline">
+                <li><h6><span class="mdi mdi-bookmark"></span><a href="">Ver más...</a></h6></li>
+                <li><h6><span class="mdi mdi-label"></span>Etiquetas: 
+                  <a href=""><ins>lorem</ins></a>
+                  <a href=""><ins>ipsum</ins> </a>
+                  <a href=""><ins>digilat</ins></a></h6>
+                </li>
+              </ul>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-5">
         <div class="claire">
-          <div>
-            <a href="">Historia destacada</a>
-          </div>
+          
+            <div class="box-history" href="">Historia destacada</div>
+          
           <div class="video ">
             <div class="played">
               <div>            
@@ -145,21 +159,21 @@
             </div>
           </div> 
           <h4>Claire Dupond</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus unde quam illum facere reiciendis error possimus cumque sunt sed temporibus laborum voluptatem, autem labore beatae fuga at eum totam! Ipsam soluta natus dignissimos, ipsum dolorem.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Duis vulputate commodo lectus, ac blandit  elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique</p>
           <ul class="list-unstyled list-inline clearfix">
-            <li class="pull-left"> publicado el 09/10/2015</li>
-            <li class="pull-right"> <a href="">Ver más...</a> </li>
-            <li class="pull-right"><span class="mdi mdi-bookmark"></span></li> 
+            <li class="pull-left"><h6><small>publicado el 09/10/15</small></h6></li>
+            <li class="pull-right"> <a href=""> <h6>Ver más...</h6></a> </li>
+            <li class="pull-right"><span class="mdi mdi-bookmark"></li>
           </ul>     
         </div>
         <div class="calendar"> 
-          <a href=" ">Agenda</a>
+          <div class="box-history">Agenda</div>
           <div class="agenda clearfix">
             <div class="pull-left box text-center"> 
               <h4> 23 Enero</h4>
             </div>
             <div class="fecha over-hidden"> 
-              <h4>Lorem ipsum et diligat</h4>
+              <h5>Lorem ipsum et diligat</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <p>De 23 a 28 Diciembre 2015</p>
             </div>
@@ -169,7 +183,7 @@
               <h4> 23 Enero</h4>
             </div>
             <div class="fecha over-hidden"> 
-              <h4>Lorem ipsum et diligat</h4>
+              <h5>Lorem ipsum et diligat</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <p>De 23 a 28 Diciembre 2015</p>
             </div>
@@ -179,7 +193,7 @@
               <h4> 23 Enero</h4>
             </div>
             <div class="fecha over-hidden"> 
-              <h4>Lorem ipsum et diligat</h4>
+              <h5>Lorem ipsum et diligat</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <p>De 23 a 28 Diciembre 2015</p>
             </div>
@@ -189,7 +203,7 @@
               <h4> 23 Enero</h4>
             </div>
             <div class="fecha over-hidden"> 
-              <h4>Lorem ipsum et diligat</h4>
+              <h5>Lorem ipsum et diligat</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <p>De 23 a 28 Diciembre 2015</p>
             </div>
@@ -197,7 +211,7 @@
         </div>
         <hr> 
         <div class="information"> 
-          <h3>Más Información</h3>
+          <h4>Más Información</h4>
           <a href=" "><ins>Localidades</ins></a>
           <h4>Lorem ipsum et diligat</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -206,16 +220,24 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>        
         </div>
       </div>    
-      <div class="col-md-2">
+      <div class="col-md-3 sm-hiddem">
         <div class="more-ifm">
-          <h3>Más información</h3>  
-          <p><span class="mdi mdi-bookmark"></span><strong>Finanzas y fiscalización</strong></p>
-          <p><span class="mdi mdi-bookmark"></span><strong>Inversión y equipos</strong></p>
-          <p><span class="mdi mdi-bookmark"></span><strong>Medio Ambiente</strong></p>
-          <p><span class="mdi mdi-bookmark"></span><strong>Habitat / Urbanismo</strong></p>
-          <p><span class="mdi mdi-bookmark"></span><strong>Sanidad</strong></p>
-          <p><span class="mdi mdi-bookmark"></span><strong>Social/Servicios</strong></p>
-          <p><span class="mdi mdi-bookmark"></span><strong>Transporte</strong></p>
+          <h4>Más información</h4>  
+          <p><span class="mdi mdi-bookmark"></span>Finanzas y fiscalización</p>
+          <p><span class="mdi mdi-bookmark"></span>Inversión y equipos</p>
+          <p><span class="mdi mdi-bookmark"></span>Medio Ambiente</p>
+          <p><span class="mdi mdi-bookmark"></span>Habitat / Urbanismo</p>
+          <p><span class="mdi mdi-bookmark"></span>Sanidad</p>
+          <p><span class="mdi mdi-bookmark"></span>Social/Servicios</p>
+          <p><span class="mdi mdi-bookmark"></span>Transporte</p>
+        </div>
+        <div class="magazine">
+          <h4>MAGAZINE</h4>
+          <h4><strong>ECODEFI</strong></h4>
+          <p>ENQUETE</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+          <p>PREGUNTA</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <hr>  
       </div>
@@ -224,39 +246,39 @@
     <div class="row"> 
       <div class="more-ifm pull-left">
         <h3>Rubros</h3>  
-        <p><span class="mdi mdi-bookmark"></span><strong>Actualidades</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>En directo</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Reporte Financiero</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Nuestra oferta</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>De Nosotros a ustedes</strong></p>
+        <p><span class="mdi mdi-bookmark"></span>Actualidades</p>
+        <p><span class="mdi mdi-bookmark"></span>En directo</p>
+        <p><span class="mdi mdi-bookmark"></span>Reporte Financiero</p>
+        <p><span class="mdi mdi-bookmark"></span>Nuestra oferta</p>
+        <p><span class="mdi mdi-bookmark"></span>De Nosotros a ustedes</p>
       </div>
-      <div class="more-ifm pull-left">
+      <div class="more-ifm pull-left hidden">
         <h3>Expertise</h3>  
-        <p><span class="mdi mdi-bookmark"></span><strong>Finanzas y fiscalización</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Inversión y equipos</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Medio Ambiente</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Habitat / Urbanismo</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Sanidad</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Social/Servicios</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Transporte</strong></p>
+        <p><span class="mdi mdi-bookmark"></span>Finanzas y fiscalización</p>
+        <p><span class="mdi mdi-bookmark"></span>Inversión y equipos</p>
+        <p><span class="mdi mdi-bookmark"></span>Medio Ambiente</p>
+        <p><span class="mdi mdi-bookmark"></span>Habitat / Urbanismo</p>
+        <p><span class="mdi mdi-bookmark"></span>Sanidad</p>
+        <p><span class="mdi mdi-bookmark"></span>Social/Servicios</p>
+        <p><span class="mdi mdi-bookmark"></span>Transporte</p>
       </div>
       <div class="more-ifm pull-left">
         <h3>Suscripción</h3>  
-        <p><span class="mdi mdi-bookmark"></span><strong>Todo el flujo</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Flujo RSS para expertos</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Noticias</strong></p>
+        <p><span class="mdi mdi-bookmark"></span>Todo el flujo</p>
+        <p><span class="mdi mdi-bookmark"></span>Flujo RSS para expertos</p>
+        <p><span class="mdi mdi-bookmark"></span>Noticias</p>
       </div>
       <div class="more-ifm pull-left">
         <h3>Nosotros</h3>  
-        <p><span class="mdi mdi-bookmark"></span><strong>¿Quiénes somos?</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Plan del sitio</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Información legal</strong></p>
+        <p><span class="mdi mdi-bookmark"></span>¿Quiénes somos?</p>
+        <p><span class="mdi mdi-bookmark"></span>Plan del sitio</p>
+        <p><span class="mdi mdi-bookmark"></span>Información legal</p>
       </div>
       <div class="more-ifm pull-left">
         <h3>Contacto</h3>  
-        <p><span class="mdi mdi-bookmark"></span><strong>Contáctanos</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>FAQ</strong></p>
-        <p><span class="mdi mdi-bookmark"></span><strong>Haga sus preguntas</strong></p>
+        <p><span class="mdi mdi-bookmark"></span>Contáctanos</p>
+        <p><span class="mdi mdi-bookmark"></span>FAQ</p>
+        <p><span class="mdi mdi-bookmark"></span>Haga sus preguntas</p>
       </div>
     </div>
   </div>

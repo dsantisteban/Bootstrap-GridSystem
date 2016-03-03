@@ -4,10 +4,61 @@ a:hover{
 	color:black;
 }
 a:hover{
-	font-weight: 600
+	font-weight: 600;
+	text-decoration: none;
+}
+.noticia{
+	padding-top:6%;
+} 
+.noticia li a,
+.noticia li button,
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	font-size: 18px;
+}
+
+.noticia li {
+	padding-right: 2%;
+}
+.noticia li button{
+	border-color: black;
+	background-color: #E6E6E6;
+	padding:0 10%;
+}
+.noticia li input{
+	border: 2px black solid;
+	padding-left: 1%;		
+	color:#D1D1D1;
+	font-size: 16px;
+	font-weight: 400;
+	width: 108%;
 }
 .nav-tabs>li>a {
     border-radius: 0px 0px 0 0;
+}
+.nav-tabs ul{
+	padding-left: 1%;
+}
+.navbar-inverse {
+    background-color: white;
+    border-color:white;   
+}
+.navbar-collapse {
+    padding:0
+}
+.navegador{
+	background-color: #D6D6D6;
+	padding-top: 4%;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: white;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color:black;
+    background-color: white;
 }
 .foto{
 	width: 100%;
@@ -18,7 +69,7 @@ a:hover{
 	padding: 86px 0%;
 }
 .video{
-	height: 180px;
+	height: 220px;
 	width: 100%;
 	background-color: white;
 	border: 1px solid black;
@@ -71,8 +122,9 @@ span[class*="mdi-bookmark"] {
 .box h4 {
 	line-height: 1.5;
 }
-h4{
+h5{
 	margin:0;
+	font-weight: 600;
 }
 p{
 	font-size: 13px;
@@ -83,6 +135,40 @@ p{
 .more-ifm{
 	padding-right: 4%;
 }
-.agenda{
-	padding-top: 2%;
+.calendar{
+	padding: 2%;
+}
+
+[class*="col-"]{
+	padding: 0;
+}
+.col-md-2{
+	padding-left: 1%;
+}
+
+.box-history{
+	padding:2% 3% 2% 2%;
+	width: 150px;
+	background-color: #929292;
+	color:#EEEEEE;
+
+}
+.claire{
+	padding: 0% 2%;
+}
+.repeat1 p{
+	text-align: justify;
+	font-size: 10.6px;
+	color: #C9C9C9;
+	margin-right: 2%;
+	font-weight: bold;
+}
+.video {
+	margin-top: 2%;
+}
+h1,h2,h5,h6{
+	font-weight:800;
+}
+ins{
+	color:#B2B2B2;
 }
