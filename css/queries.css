@@ -1,7 +1,7 @@
 @media screen and (max-width: 1200px) and (min-width: 900px){
 
 	.nav-tabs>li>a {
-     margin-right: 0px;
+		margin-right: 0px;
 	}
 }
 
@@ -10,7 +10,7 @@
 		padding: 2%;
 	}
 	.nav>li>a {
-    padding: 8px 5px;
+		padding: 8px 5px;
 	}	
 	.navbar-header button{
 		display: none;
@@ -19,49 +19,56 @@
 		display: block;
 	}
 	span[class*="mdi-"] {
-    font-size: 25px;
+		font-size: 25px;
 	}
 	.nav-tabs>li>a {
-     margin-right: 0px;
- 	}
- 	.col-md-3{
- 		display: none;
- 	}
- 	.agenda{
- 		padding-top: 2%;
- 	}
- 	.more-ifm {
-    padding-right: 2%;
-}
-	
-
+		margin-right: 0px;
+	}
+	.col-md-3{
+		display: none;
+	}
+	.agenda{
+		padding-top: 2%;
+	}
+	.more-ifm {
+		padding-right: 2%;
+	}	
 }
 @media screen and (max-width: 767px) and (min-width:200px ){
 	.navbar-default .navbar-toggle .icon-bar {
-    background-color: black;
-}
+		background-color: black;
+	}
 	.noticia {
-    padding-top: 10%;
-}
+		padding-top: 10%;
+	}
+	h1{
+		font-size: 25px;
+	}
+	.noticia li a{
+		font-size: 17px;
+	}
 	.navbar-default .navbar-toggle {
-    border-color: transparent;
-}
+		border-color: transparent;
+	}
 	.container{
 		padding: 1% 8%;	
 
 	}
-		.nav-tabs li{
+	.nav-tabs li{
 		float: none;
 	}
-.box-history {
+	.box-history {
 		width: 166px;
 	}
-	 	.col-md-3{
- 		display: none;
- 	}
- 	 	.agenda{
- 		padding-top: 2%;
- 	}
-	
+	.col-md-3{
+		display: none;
+	}
+	.agenda{
+		padding-top: 2%;
+	}
+	.more-ifm{
+		height: 180px;
+		width: 50%;
+	}
 	
 }
