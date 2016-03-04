@@ -2,9 +2,6 @@
 a,
 a:hover{
 	color:black;
-}
-a:hover{
-	font-weight: 600;
 	text-decoration: none;
 }
 .noticia{
@@ -33,32 +30,32 @@ a:hover{
 	width: 108%;
 }
 .nav-tabs>li>a {
-    border-radius: 0px 0px 0 0;
+	border-radius: 0px 0px 0 0;
 }
 .nav-tabs ul{
 	padding-left: 1%;
 }
 .navbar-inverse {
-    background-color: white;
-    border-color:white;   
+	background-color: white;
+	border-color:white;   
 }
 .navbar-collapse {
-    padding:0
+	padding:0;
 }
 .navegador{
 	background-color: #D6D6D6;
 	padding-top: 4%;
 }
 .navbar-inverse .navbar-nav>li>a {
-    color: black;
+	color: black;
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: white;
+	border-color: white;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, 
 .navbar-inverse .navbar-nav>.active>a:hover {
-    color:black;
-    background-color: white;
+	color:black;
+	background-color: white;
 }
 .foto{
 	width: 100%;
@@ -104,7 +101,7 @@ span[class*="mdi-"]{
 }
 span[class*="mdi-label"], 
 span[class*="mdi-bookmark"] {
-	font-size: 20px;
+	font-size: 16px;
 	color:#000000;
 }
 .claire{
@@ -166,9 +163,36 @@ p{
 .video {
 	margin-top: 2%;
 }
-h1,h2,h5,h6{
+h2,h5,h6{
 	font-weight:800;
 }
 ins{
 	color:#B2B2B2;
+}
+
+.more-ifm p{
+	font-weight: 600;
+}
+.col-md-3 {
+	padding-left: 1%;
+}
+.magazine{
+	background-color:#EBEBEB ;
+	padding:5%;
+	margin-bottom: 2%;
+}
+.magazine p:nth-child(3),
+.magazine p:nth-child(5),
+.magazine h4{
+	margin:0;
+}
+
+.magazine h4:nth-child(2){
+	margin-bottom: 2%;
+}
+.raya{
+	height: 5px;
+	background: #3D3D3D;
+	border:0;
+	width: 100%;
 }
